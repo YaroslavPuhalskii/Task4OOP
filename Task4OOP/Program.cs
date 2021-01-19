@@ -14,7 +14,15 @@ namespace Task4OOP
             //client.Print();
 
             Administrator admin = new Administrator("", "", 201.00m, true);
+            Administrator admin1 = new Administrator("", "", 201.00m, true);
+            Administrator admin2 = new Administrator("", "", 201.00m, true);
+            Administrator admin3 = new Administrator("", "", 201.00m, true);
+            Administrator admin4 = new Administrator("", "", 201.00m, true);
             admin.Cost();
+            admin1.Cost();
+            admin2.Cost();
+            admin3.Cost();
+            admin4.Cost();
             Console.ReadLine();
         }
     }
