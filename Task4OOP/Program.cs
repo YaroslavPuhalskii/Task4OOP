@@ -13,7 +13,7 @@ namespace Task4OOP
             //Client client = new Client("", "", -1.00m, true);
             //client.Print();
 
-            Administrator admin = new Administrator("", "", -1.00m, true);
+            Administrator admin = new Administrator("", "", 201.00m, true);
             admin.Cost();
             Console.ReadLine();
         }
