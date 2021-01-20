@@ -6,20 +6,15 @@ using System.Threading.Tasks;
 
 namespace Task4OOP
 {
-    class Client
+    class Client : Person
     {
-        protected string firstName;
-        protected string lastName;
         protected decimal cash;
         public bool blacklist;
         
-
-
-
-        public Client(string FirstName, string LastName, decimal cash, bool BlackList)
+        public Client(string FirstName, string LastName, decimal cash, bool BlackList) : base(FirstName,LastName)
         {
-            this.firstName = FirstName;
-            this.lastName = LastName;
+            this.FirstName = firstName;
+            this.LastName = lastName;
             this.Cash = cash;
             this.blacklist = BlackList;
         }
@@ -37,19 +32,6 @@ namespace Task4OOP
                 else { cash = value; }
             }
         }
-
-        public string LastName
-        {
-            get { return lastName; }
-            set { lastName = value; }
-        }
-
-        public string FirstName
-        {
-            get { return firstName; }
-            set { firstName = value; }
-        }
-
 
         public void Print()
         {

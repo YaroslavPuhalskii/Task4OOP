@@ -12,17 +12,14 @@ namespace Task4OOP
         {
             //Client client = new Client("", "", -1.00m, true);
             //client.Print();
-
-            Administrator admin = new Administrator("", "", 201.00m, true);
-            Administrator admin1 = new Administrator("", "", 201.00m, true);
-            Administrator admin2 = new Administrator("", "", 201.00m, true);
-            Administrator admin3 = new Administrator("", "", 201.00m, true);
-            Administrator admin4 = new Administrator("", "", 201.00m, true);
-            admin.Cost();
-            admin1.Cost();
-            admin2.Cost();
-            admin3.Cost();
-            admin4.Cost();
+            
+            Administrator admin = new Administrator("Administrator", "qwe");
+            Client client = new Client("Tanya", "Ivanova", 300m, true);
+            Client client2 = new Client("Katya", "Krupina", 300m, true);
+            Client client3 = new Client("Tanya", "Ivanova", 300m, true);
+            admin.Add(client);
+            admin.Add(client2);
+            admin.Add(client3);
             Console.ReadLine();
         }
     }
