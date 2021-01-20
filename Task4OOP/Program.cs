@@ -19,6 +19,7 @@ namespace Task4OOP
             Client client3 = new Client("Tanya", "Ivanova", 300m, true);
             admin.Add(client);
             admin.Add(client2);
+            admin.Delete(client2);
             admin.Add(client3);
             Console.ReadLine();
         }

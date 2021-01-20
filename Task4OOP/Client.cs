@@ -35,7 +35,7 @@ namespace Task4OOP
 
         public void Print()
         {
-            Console.WriteLine("ФИО : " + firstName + " " + lastName + cash);
+            Console.WriteLine("ФИО : " + firstName + " " + lastName);
         }
     }
 }

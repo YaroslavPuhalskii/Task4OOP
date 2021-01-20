@@ -23,15 +23,26 @@ namespace Task4OOP
             Console.Write("Колчество дней : ");
             int day = Convert.ToInt32(Console.ReadLine());
             decimal Summ = day * 30;
-            Console.WriteLine(Summ);
             if (client.blacklist != false && client.Cash > Summ && person.Count < 2)
             {
                 person.Add(client);
+                Print();
                 client.Print();
             }
             else if (client.blacklist == false) { Console.WriteLine("Вы находитесь в чёрном списке!"); }
             else if (person.Count == 2) { Console.WriteLine("Все комнаты заняты!"); }
             else if (client.Cash < Summ) { Console.WriteLine("У Вас недостаточно денег"); }
+        }
+
+
+        public void Delete(Client client)
+        {
+            person.Remove(client);
+        }
+
+        public void Print()
+        {
+            Console.WriteLine("Вы заселены в отель!");
         }
     }
 }
